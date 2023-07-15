@@ -1,0 +1,40 @@
+
+.container {
+    flex: 1;
+    justify-content: center;
+    background-color:#FAF9F8;
+  }
+
+  .ellipseIcon {
+    width: 245px;
+    height: 245px;
+    align-self: center;
+    position: absolute;
+  }
+
+  .title {
+    font-family: "Avenir";
+    font-size: 14px;
+    font-weight: 900;
+    text-align: left;
+    color: #000000;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  .score {
+    font-family: "Avenir";
+    font-size: 25px;
+    font-weight: 900;
+    text-align: left;
+    color: #000000;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+
+  .starIcon {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+  }

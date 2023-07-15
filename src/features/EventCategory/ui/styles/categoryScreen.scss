@@ -1,0 +1,112 @@
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+    box-shadow: $x-axis $y-axis $blur $color;
+  }
+.container {
+    flex: 1;
+    justify-content: center;
+    background-color:#FAF9F8;
+  }
+
+  .imageThumbnail {
+    justify-content: center;
+    align-items: center;
+    height: 104px,
+  }
+
+  .cellContainer {
+    flex: 0.5;
+    flex-direction:column;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 14px;
+    background-color: white;
+    border-radius: 8px;
+    height: 160px;
+    justify-content: space-between;
+    @include box-shadow(0px, 1px, 2px, #97979752);
+  }
+
+  .footer {
+    flex: 1;
+    flex-direction: column;
+    height: 45px;
+    align-self: flex-start;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 8px;
+  }
+
+  .title {
+    font-family: "Avenir";
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #616161;
+  }
+
+  .subtitle {
+    font-family: "Avenir";
+    font-size: 14px;
+    font-weight: 800;
+    text-align: left;
+    color: #000000;
+    margin-top: 3px;
+  }
+
+  .itemIcon {
+    margin-bottom: 5px;
+    width: 11px;
+    height: 5px;
+  }
+
+  .checkmarkIcon {
+    position: absolute;
+    width:  27px;
+    height: 27px;
+    align-self: flex-end;
+    margin-top: 12px;
+    right: 5px;
+  }
+
+  .list {
+    margin: 7px;
+  }
+
+  .headerTitle {
+    font-family: "Avenir";
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+    color: #000000;
+    align-self: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+
+  .headerSubTitle {
+    font-family: "Avenir";
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #747474;
+    align-self: center;
+    margin-bottom: 25px;
+  }
+
+  .score {
+    font-family: "Avenir";
+    font-size: 37px;
+    font-weight: 900;
+    text-align: left;
+    color: #000000;
+    align-self: center;
+    margin-bottom: 25px;
+  }
+
+  .backButton {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+  }
